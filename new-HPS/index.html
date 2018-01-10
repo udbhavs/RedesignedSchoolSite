@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>The Hyderabad Public School</title>
+        <script src="js/jquery.js"></script>
+        <script src="js/annyang.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="stylesheets/style.css"/>
+        <link rel="stylesheet" href="stylesheets/aos.css"/>
+    </head>
+
+    <script>//Button menu functions
+            var clickF = {
+                portal: function() {
+                    window.location.href = "http://hpsbegumpet.in";
+                },
+                downloads: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=downloads";
+                },
+                gallery: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=image";
+                },
+                aboutUs: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=glance&type=aboutus";
+                },
+                academics: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=introduction&type=acadamics";
+                },
+                contactUs: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=enquiry&type=contact";
+                },
+                administration: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=admision&type=administration";
+                },
+                activities: function() {
+                    window.location.href = "http://www.hpsbegumpet.org.in/index.php?lefttype=games&type=activity";
+                }
+            
+            }
+    </script>
+
+    <body>
+
+        <div id="front-page">
+            <div id="front-page-title" class="page-title" data-aos="fade-up" data-aos-duration="700">The Hyderabad Public School</div>
+            <pre id="front-page-lit" data-aos="zoom-in">
+            توشاہین ہے پروازہےکام تیرا 
+            تیرےسامنےآسماںاوربھی ہیں 
+                                             - Iqbal
+                    
+            तू शाहीन है, परवाज़ है काम तेरा 
+            तेरे सामने आसमान और भी है ||
+                    
+            "You are the eagle;
+            to soar is your destiny,
+            There are newer worlds to discover,
+            Other horizons to explore!" (Transcreation)
+                    
+            "O falcon ! Soar the skies.
+            For you there are many other horizons" (Translation)
+            </pre>
+            <div id="news-bar">
+                <marquee id="news-bar-marquee"> Sale of Application forms for admission into PP-1(2018-19) from 08-01-2018 to 23-01-2018. Detailed advt. in downloads section.</marquee>
+            </div>
+        </div>
+
+        <!-- Quick Menu Bar -->
+        <div id="menu-bar">
+            <div id="menu-about-us" class="bar" onclick="clickF.aboutUs()">About Us</div>
+            <div id="menu-academics" class="bar" onclick="clickF.academics()">Academics</div>
+            <div id="menu-administration" class="bar" onclick="clickF.administration()">Administration</div>
+            <div id="menu-activities" class="bar" onclick="clickF.activities()">Activities</div>
+            <div id="menu-contact-us" class="bar" onclick="clickF.contactUs()">Contact Us</div>
+        </div>
+
+        <div id="stories-page">
+            <div id="stories-page-title" class="page-title" data-aos="fade-up">Top Stories</div>
+            <div id="top-story" data-aos="zoom-out">
+                <div id="top-story-title">Satya Nadella's visit to our school</div> <br>
+                <div id="top-story-text">Satya Nadella, The CEO of Microsoft and an alumnus of the school, visited his alma mater on the 23rd February, 2017 to inaugurate the Turner Library and Ramandeep Kaur Samra Center for performing Arts. He was warmly received by the Board of Governors. He relived his student life by playing cricket with the present cricket team of the school. . He had an interactive session with the students of the school where not only did he address them but also answered their questions. The session was inspiring and motivating for the students.</div>
+            </div>
+            <div id="top-stories-button">
+                <button id="read-more-button" onclick="clickF.readMore()" class="enter-button" data-aos="zoom-out">Read More...</button>
+            </div>
+        </div>
+
+        <div id="features-page">
+            <div id="enter-portal-text" class="enter-title" data-aos="fade-right">Portal</div>
+            <button id="enter-portal" class="enter-button" onclick="clickF.portal()" data-aos="fade-left">Enter Portal</button>
+            <div id="enter-downloads-text"class="enter-title" data-aos="fade-right">Downloads</div>
+            <button id="enter-downloads" class="enter-button" onclick="clickF.downloads()" data-aos="fade-left">Enter Downloads</button>
+            <div id="enter-gallery-text"class="enter-title" data-aos="fade-right">Memorable Moments</div>
+            <button id="enter-gallery" class="enter-button" onclick="clickF.gallery()" data-aos="fade-left">Enter Gallery</button>
+        </div>
+
+        <div id="downloads-page">
+            <div id="downloads-page-title">Downloads</div>
+        </div>
+
+    </body>
+
+    <!-- Init the scroll animation library at the end -->
+    <script>
+        AOS.init();
+    </script>
+
+</html>

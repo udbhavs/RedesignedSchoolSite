@@ -1,0 +1,141 @@
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#front-page {
+    height: 100vh;
+    background: url(../assets/hps.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    top: 0px;
+}
+
+#front-page-title {
+    font-size: 12vh;
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+
+#front-page-lit {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+#news-bar {
+    width: 100%;
+}
+
+#news-bar-marquee {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    height: 5vh;
+    top: 95vh;
+    left: 0px;
+    font-size: 4vh;
+    transition: 0.2s;
+}
+
+#news-bar-marquee:hover {
+    height: 8vh;
+    font-size: 6vh;
+    top: 92vh;
+}
+
+#features-page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    text-align: center;
+}
+
+.enter-button {
+    box-shadow: 0px 0px;
+    background-color:dodgerblue;
+    color: white;
+    border-radius: 10px;
+    height: 12vh;
+    width: 22vh;
+    border: none;
+    margin-top: 5vh;
+    font-size: 4vh;
+    margin-left: 5vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.enter-button:hover {
+    background-color: blueviolet;
+}
+
+.enter-title {
+    color: grey;
+    font-size: 6vh;
+    margin-top: 5vh;
+}
+
+.page-title {
+
+}
+
+#stories-page {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 60vh 20vh;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+#top-story {
+    text-align: center;
+}
+
+#top-story-title {
+    font-size: 8vh;
+    color: white;
+}
+
+#top-story-text {
+    max-width: 70vw;
+    max-height: 60vh;
+    font-size: 3vh;
+    margin: auto;
+}
+
+#stories-page-title {
+    font-size: 6vh;
+    color: white;
+}
+
+#read-more-button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+#menu-bar {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    text-align: center;
+}
+
+.bar {
+    background-color: coral;
+    color: white;
+    font-size: 3wh;
+    transition: 0.2s;
+}
+
+.bar:hover {
+    background-color: white;
+    color: coral;
+    cursor: pointer;
+}
